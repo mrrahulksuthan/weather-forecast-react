@@ -1,0 +1,90 @@
+.App {
+  text-align: center; 
+}
+ 
+::placeholder { 
+  color: rgb(235, 233, 233);
+  opacity: 1; /* Firefox */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.background-main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../public/background/main-background.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: -1;  
+  filter: blur(2px); 
+}
+
+.citySearch{
+  background-color: rgba(241, 234, 234, 0.268);
+  border-radius: 8px;
+  border: none;
+  margin-top: 30px;
+  font-size: 20px;  
+  padding: 11px;
+  margin-left: -450px;
+  outline: none;
+  color: white;
+}
+
+.btnSubmit{
+  background-color: rgba(241, 234, 234, 0.268);
+  border-radius: 8px;
+  border: none;
+  color: white;
+  padding: 16px 10px 12px 10px;
+  margin-left: 10px;
+  outline: none; 
+  font-size: 15px;
+}
+
+.main-area {
+  position: absolute;
+  top: 55%;
+  left: 77%;
+  transform: translate(-84%, -52%);
+  width: min(80vw, 182vh);
+  height: min(80vw, 80vh);
+  background-color: rgba(241, 234, 234, 0.268);
+  border-radius: 20px;
+}
+
+.city-details {
+  margin-top: 80px;
+  align-items: flex-start;
+  justify-content: left;
+}
+
+.weather-img{
+background-size: cover;
+background-position: center;
+background-image: url(../public/background/sunny.png);
+position: fixed;
+z-index: 1;
+width: 30%;
+height: 60%;
+top: 2%;
+}
+
+ 
+.weather-text h3,
+.weather-text h1,
+.weather-text h4 {
+  margin: 0; 
+  padding: 5px 0; 
+}
+
+.weather-text h1{
+  font-weight: 800;
+  font-size: 36px;
+}
+
+.weather-text h4{
+  font-weight: 400;
+}
