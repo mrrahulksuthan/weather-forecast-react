@@ -16,7 +16,7 @@ function App() {
       if (!city) {
         throw new Error('Enter a city');
       }
-      const response = await fetch(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=yes`);
+      const response = await fetch(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=yes`);
       if (!response.ok) {
         throw new Error('City not found');
       }
