@@ -14,7 +14,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../public/background/main-background.jpg');
+  background-image: url('./backgrounds/main-background.jpg');
   background-size: cover;
   background-position: center;
   z-index: -1;  
@@ -51,20 +51,24 @@
   transform: translate(-84%, -52%);
   width: min(80vw, 182vh);
   height: min(80vw, 80vh);
-  background-color: rgba(241, 234, 234, 0.268);
+  background-color: rgba(241, 234, 234, 0.405);
   border-radius: 20px;
+  display: flexbox;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
 }
 
 .city-details {
   margin-top: 80px;
   align-items: flex-start;
   justify-content: left;
+  display: flexbox;
 }
 
 .weather-img{
 background-size: cover;
 background-position: center;
-background-image: url(../public/background/sunny.png);
+background-image: url('./backgrounds/sunny.png');
 position: fixed;
 z-index: 1;
 width: 30%;
@@ -88,3 +92,38 @@ top: 2%;
 .weather-text h4{
   font-weight: 400;
 }
+
+.secndDay,
+.thirdDay,
+.fourthDay,
+.fifthDay{ 
+  width: calc(25% - 50px); /* Set width to 25% minus half of the gap size */
+  box-sizing: border-box;
+  padding: 10px; /* Adjust padding as needed */
+  background-color: rgba(255, 255, 255, 0.226);
+  border-radius:100px ;
+}
+
+.miniGrids{
+  margin-top: 94px; 
+  display: flex;
+  justify-content: space-between; 
+  height: 40%;
+  width: 100%; 
+  background-color: transparent;
+  border-radius: 20px;
+}
+
+
+
+.weather-img-mini{
+background-size: contain;
+background-position: center; 
+/* position: absolute; */
+z-index: 1;
+/* width: 7%; */
+height: 60%;
+/* top: 63%; */
+margin-bottom: -60px;
+}
+
